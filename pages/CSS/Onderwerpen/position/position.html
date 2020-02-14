@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="../../../../scripts/style.css">
+    <link rel="stylesheet" href="../../scripts/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../../../group.html">Group</a></li>
+            <li class="navlinks"><a href="../../../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="../../../HTML/HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../../CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container CSS_header">
+            <a href="#section1" class="headerbutton">
+                <p>Position</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text achtergrond_kleur">
+                    <h1>Position</h1>
+                    <p class="p_element">Je kan elementen in HTML verschillende posities geven met de position
+                        eigenschap in CSS. <br>
+                        met deze eigenschap ken je elementen verschillend laten reageren op scrollen de manier dat het
+                        element wordt weergegeven. <br>
+                        <br>
+                        Bij de position eigenschap kan je de volgende waardes gebruiken:
+                    </p>
+                    <ul class="ul-fix">
+                        <li>static (standaard)</li>
+                        <li>relative</li>
+                        <li>fixed</li>
+                        <li>absolute</li>
+                        <li>sticky</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">position: static;</h2>
+                    <p>Elementen met de CSS eigenschap static gaan mee met de rest van de pagina, dus ook als er wordt
+                        gescrolled. <br>
+                        elementen met deze waarde kun je niet verplaatsen met de top, bottom, right en left CSS
+                        eigenschappen.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="position_static_voorbeeld_style"
+                        cols="25" rows="20" placeholder="background-color style">.position {
+    position: static;
+}
+</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('position_static_voorbeeld_style', 'position_static_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+
+
+                </div>
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="position_static_voorbeeld" src="position_voorbeeld.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="iframe_container">
+                    <h1>Voorbeeld</h1>
+                    <iframe class="iframe_voorbeeld" id="position_relative_voorbeeld" src="position_voorbeeld.html"
+                        frameborder="0"></iframe>
+                </div>
+
+                <div class="text background_image">
+                    <h2 class="h2_text_devide">position: relative;</h2>
+                    <p>Elementen met de CSS eigenschap relative kan je wel verplaatsen met de top, bottom, right en left
+                        CSS eigenschappen.<br>
+                        Als een element deze waarde heeft dan gaan de elementen niet de open ruimtes opvullen om het
+                        element heen <br>
+                        de positie van het element is dan ook relatief aan waar het element normaal zit.
+                    </p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="background-image" id="position_relative_voorbeeld_style" class="css_style_text"
+                        cols="30" rows="20">.position {
+                            position: relative;
+                            top: 15%;
+                            left: 10%;
+                        }</textarea>
+                </div>
+                <button class="voorbeeld_button"
+                    onclick="styleChanger('position_relative_voorbeeld_style', 'position_relative_voorbeeld')">
+                    <h1>Run</h1>
+                </button>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text background-repeat">
+                    <h2 class="h2_text_devide">position: fixed;</h2>
+                    <p>Als een element deze eigenschap heeft dan blijft het element op dezelfde plek in het beeld als
+                        waar het hoorde, het verplaatst zich niet als er wordt gescrollt en blijft altijd op dezelfde
+                        positie.<br>
+                        deze elementen kunnen worden verplaatst met de top, bottom, right en left CSS eigenschappen.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="position_fixed_style" cols="25"
+                        rows="20" placeholder="background-color style">.position {
+    position: fixed;
+    top: 100px;
+}</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('position_fixed_style', 'position_fixed_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="position_fixed_voorbeeld" src="position_voorbeeld.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="iframe_container">
+                    <h1>Voorbeeld</h1>
+                    <iframe class="iframe_voorbeeld" id="position_absolute_voorbeeld" src="position_voorbeeld.html"
+                        frameborder="0"></iframe>
+                </div>
+
+                <div class="text background_image">
+                    <h2 class="h2_text_devide">position: absolute;</h2>
+                    <p>Position absolute doet hetzelfde als position: fixed; maar inplaats dat het element in het beeld
+                        altijd op dezelfde plek blijft, blijft het element altijd op dezelfde plek ten opzichte van het
+                        bovenliggende element. <br>
+                        het bovenliggende element moet echter wel een position hebben ander wordt de position absolute
+                        element opdezelfde plek gehouden ten opzichten van de body. <br>
+                        Elementen met deze waarde kun je verplaatsen met de top, bottom, right en left CSS
+                        eigenschappen.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="background-image" id="position_absolute_voorbeeld_style" class="css_style_text"
+                        cols="30" rows="20">.position {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}</textarea>
+                </div>
+                <button class="voorbeeld_button"
+                    onclick="styleChanger('position_absolute_voorbeeld_style', 'position_absolute_voorbeeld')">
+                    <h1>Run</h1>
+                </button>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text background-repeat">
+                    <h2 class="h2_text_devide">position: sticky;</h2>
+                    <p>Met deze eigenschap wisselt eigenlijk tussen Position: relative; en position: fixed;, Als een
+                        element deze eigenschap heeft dan heeft het element eigenlijk position: relative;, <br> maar als
+                        een bepaalde positie is berijkt dan verandert de eigenschap naar position: fixed; en blijft hij
+                        op die plek plakken.<br>
+                        Bij dit element moet je één van de top. bottom, right en left eigenschappen gebruiken om de
+                        waarde te defineren waar het element moet blijven plakken.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="position_sticky_style" cols="25"
+                        rows="20" placeholder="background-color style">.position {
+    position: sticky;
+    top: 10%;
+}</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('position_sticky_style', 'position_sticky_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="position_sticky_voorbeeld" src="position_voorbeeld.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

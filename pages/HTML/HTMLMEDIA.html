@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <title>HTML - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="../../scripts/style.css">
+    <link rel="stylesheet" type="text/css" href="scripts/HTML.css">
+</head>
+
+<body>
+    <header class="HTML_Header">
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../group.html">Group</a></li>
+            <li class="navlinks"><a href="../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../CSS/CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container HTML_header_image">
+            <a href="#section1" class="headerbutton">
+                <p>Multimedia</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1" class="text">
+
+
+            <h1> Multimedia </h1>
+            <br>
+            <p>
+                Op deze pagina ga ik het hebben over multimedia, in het specifiek ga ik uitleggen hoe je YouTube video's
+                en afbeeldingen op je pagina kan krijgen.
+            </p>
+
+            <br>
+            <h3> Afbeeldingen op je pagina zetten </h3>
+            <p>
+
+                Als je een afbeelding op je website wilt zetten dat gebruik je het img-element. Het is natuurlijk niet
+                zo dat je alleen img erin zet, je moet er een hele code bij schrijven.<br>
+                Er horen nog allemaal verschillende codes bij, namelijk:
+                de code begint met <b> src </b>, src is afkomstig van source. In de code source schrijf je de url van de
+                afbeelding. <br>
+                Met url wordt bedoeld de bestands naam van de afbeelding die bij zo'n soort code moet de afbeelding
+                worden opgeslagen en die moet dan eindigen op -.png of -.jpg anders kan de <br> site jouw afbeedling
+                niet vinden. Jouw website gaat er ook vanuit dat de afbeelding in hetzelfde document als het html
+                bestand staat als dat niet zo is moet je dat <br>
+                aangeven dat doe je door ../mapnaam/fotnaam erbij te zetten.
+                <br> <br>
+                Vervolgens kom <b> alt </b>, alt zorgt ervoor dat als jouw afbeelding niet kan laden op de internet
+                pagina, bijvoorbeeld door slecht wifi <br>
+                dat er een alternatieve tekst komt te staan, zodat mensen snappen wat voor een afbeelding er staat.
+                <br> Je moet een alt-attribuut in je code zetten, hij mag ook leeg zijn, maar als je het niet doet dan
+                komt er een foutmelding.
+                <br><br>
+                Vervolgens komt de <b> titel </b>, een titel is niet verplicht, maar het is wel leuk om het in te
+                stellen.
+                <br> Als je een titel in je code zet dan wordt er letterlijk een titel gegeven aan je afbeelding, deze
+                verschijnt alleen als je met je muis op de afbeelding gaat staan <br>
+                of er langs gaat.
+
+                <br><br>
+
+                Het laatste stukje code gaat over <b> height </b> en <b> width </b>, dit gebruik je voor de grootte van
+                de foto. Hoe hoog en breed jij je afbeelding wilt hebben. <br>
+                Dit gaat altijd in pixels. Als je de verkeerde breedte en hoogte opgeeft krijgt je afbeelding een
+                hele rare vorm en kan de pagina het niet goed laden en krijgt het dus een hele rare vorm.
+                <br>
+                Een voorbeeld van een afbeelding met de goede width en height:
+                <br> <br>
+
+                <img src="../../content/images/html.png" alt="HTML" title="HTML" width="200" height="188">
+
+
+                <br>
+                Een voorbeeld van een afbeelding met een foute width en height: <br><br>
+                <img src="../../content/images/html.png" alt="HTML" title="HTML" width="240" height="120">
+
+                <br><br>
+                Je kan ook ook een <b> hyperlink </b> in je pagina zetten, een hyperlink is een link dat als je op de
+                afbeelding klikt je naar een site <br>
+                gaat waar meer informatie over jouw afbeelding of stukje tekst staat. Je maakt een hyperlink door een
+                img-element te gebruiken in een a-element. <br>
+                Dus je code ziet er dan als volgt uit:
+                <a href="www.voorbeeldsite.nl"></a>
+                <br>
+                De spatie voor de a moet dan weg, deze code zet je voor de code van je afbeelding. Zodat de link
+                daarin gezet wordt.
+                <br> <br>
+
+                <h3> YouTube video's </h3>
+
+                Ik ga het nu hebben over hoe je een YouTube video in je site kan zetten, ook wel een
+                multimediafragment. Dit is dan dus een site die jij niet hebt gemaakt maar toch wil <br>weergeven op
+                jouw site, daarom gebruik ik als voorbeeld een YouTube filmpje. Dit doe je door gebruik te maken van
+                een <b> iframe-element </b> in het iframe-element zet je de <br> with en height. Vervolgens hoef je
+                bij YouTube alleen maar op de delen knop te drukken en daar op insluiten of embed te klikken, <br>
+                dan krijg je een code die moet je kopi&euml;ren en in je bestand te zetten.
+                <br>
+                Voorbeeld van een video clip die ik erg leuk vindt: <br><br>
+                <iframe class="isdicht" width="560" height="315" src="https://www.youtube.com/embed/ia1iuXbEaYQ"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br> <br>
+                We hebben geprobeerd de video beschikbaar te maken, maar het is alleen niet gelukt. We zijn niet
+                achter onze fout gekomen. Soms kunnen we de video wel bekijken en soms niet.
+
+
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+        </section>
+    </main>

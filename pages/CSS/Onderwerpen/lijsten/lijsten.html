@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="../../../../scripts/style.css">
+    <link rel="stylesheet" href="../../scripts/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../../../group.html">Group</a></li>
+            <li class="navlinks"><a href="../../../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="../../../HTML/HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../../CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container CSS_header">
+            <a href="#section1" class="headerbutton">
+                <p>Lijsten</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1" name="ul, list-style-type">
+            <div class="width_limit_90">
+                <div class="text achtergrond_kleur">
+                    <h1>Lijsten</h1>
+                    <p class="p_element">In HTML kan je lijsten maken om een duidelijk overzicht te maken van
+                        onderwerpen, ingredienten of informatie. <br>
+                        deze lijsten kan je met CSS aanpassen om het mooier te maken met de volgende CSS eigenschap.<br>
+                        <br>
+                    </p>
+                    <ul class="ul-fix">
+                        <li>list-style-type, met deze eigenschap kan je aanpassen hoe de lijst gemarkeerd wordt.</li>
+                        <li>list-style-image, met deze eigenschap kan je een foto als markering gebruiken. </li>
+                        <li>list-style, deze eigenschap kan je gebruiken om de waardes van de bovenste eigenschappen in
+                            één eigenschap te zetten.</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">ul lijsten, list-style-type</h2>
+                    <p>ul lijsten zijn ongeordend, dus deze lijsten hebben geen vaste volgorde en is meer bedoeld om op
+                        een overzichtelijke manier een lijst te geven van verschillende onderwerpen. <br>
+                        maar bij HTML zijn de markeringen automatisch bolletjes maar die kan je ook veranderen naar
+                        andere vormpjes met de volgende waardes voor de css eigenschap list-style-type: <br>
+                        <br></p>
+                    <ul class="ul-fix">
+                        <li>circle</li>
+                        <li>disk</li>
+                        <li>square</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="list-style-type_ul_style" cols="25"
+                        rows="20" placeholder="background-color style">.circle {
+    list-style-type: circle;
+}
+
+.disk {
+    list-style-type: disk;
+}
+
+.square{
+    list-style-type: square;
+}
+/* probeer ook andere waardes en klik op run */</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('list-style-type_ul_style', 'list-style-type_ul_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="list-style-type_ul_voorbeeld"
+                        src="ul/list-style-type_voorbeeld.html  " frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1" name="list-style-image">
+            <div class="width_limit_90">
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="list-style-image_ul_voorbeeld"
+                        src="ul/list-style-image_voorbeeld.html" frameborder="0"></iframe>
+                </div>
+                <div class="text achtergrond_kleur">
+                    <h2 class="h2_text_devide">list-style-image</h2>
+                    <p class="p_element"> je kan ook foto's begruiken als lijst margering, daarvoor gebruik je dan de
+                        list-style-image eigenschap, waarin je als waarde een url() geeft naar de foto.<br>
+                        <br>
+                    </p>
+
+                    <h2 class="h2_text_devide">Gebruik</h2>
+                    <p>dit kan je bebruiken om uitklapbare lijsten te maken. <br>
+                        als je dan op een list-item klikt komt er een stukje text onder waardoor je meer informatie er
+                        over kan lezen of meer list-items weergeven.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="list-style-image_ul_style" cols="25"
+                        rows="20" placeholder="background-color style">.image1 {
+    list-style-image: url("../content/arrow-marker.png");
+}
+
+.image2 {
+    list-style-image: url("../content/astrix-marker.png");
+}
+
+.image3{
+    list-style-image: url("../content/check-marker.png");
+}
+/* probeer ook andere waardes en klik op run */</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('list-style-image_ul_style', 'list-style-image_ul_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1" name="ol, list-style-type">
+            <div class="width_limit_90">
+                <div class="text achtergrond_kleur">
+                    <h2 class="h2_text_devide">ol, list-style-type</h2>
+                    <p class="p_element">bij geordende lijsten zijn de markeringen genummerd en op volgorde. deze
+                        nummering is nu decimaal, dus gewoon 1, 2, 3, 4, 5 ... enz.<br>
+                        deze nummering kan je veranderen met de list-style-type eigenschap in css. <br>
+                        je hebt vele waardes voor deze eigenschap die je kan gebruiken om de nummering te veranderen
+                        naar een nummering die in de context wat toepasselijker is. <br>
+                        <br>
+                        je hebt de volgende waardes voor deze eigenschap: <br> <br>
+                    </p>
+                    <ul class="list_fix">
+                        <li>decimal</li>
+                        <li>decimal-leading-zero</li>
+                        <li>lower-roman</li>
+                        <li>upper-roman</li>
+                        <li>lower-alpha</li>
+                        <li>upper-alpha</li>
+                        <li>lower-greek</li>
+                        <li>upper-greek</li>
+                        <li>lower-latin</li>
+                        <li>upper-latin</li>
+                        <li>hebrew</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="list-style-position_ul_style"
+                        cols="25" rows="20" placeholder="background-color style">.decimal {
+    list-style-type: decimal;
+}
+.decimal-leading-zero {
+    list-style-type: decimal-leading-zero
+}
+
+.lower-roman{
+    list-style-type: lower-roman;
+}
+
+.upper-roman {
+    list-style-type: upper-roman;
+}
+
+.lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+
+.lower-greek {
+    list-style-type: lower-greek;
+}
+
+.lower-latin {
+    list-style-type: lower-latin;
+}
+
+.upper-latin {
+    list-style-type: upper-latin;
+}
+
+.hebrew {
+    list-style-type: hebrew;
+} </textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('list-style-position_ul_style', 'list-style-position_ul_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+
+                    <p></p>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="list-style-position_ul_voorbeeld"
+                        src="list-style-type, georderd.html  " frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

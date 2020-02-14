@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Kleurmodellen - Elisabeth, Heleen en Remco</title>
+	<link rel="stylesheet" href="scripts/style.css">
+	<link rel="stylesheet" href="../../scripts/style.css">
+</head>
+
+<body>
+	<header class="HTML_Header">
+		<ul class="navbar">
+			<li class="navlinks"><a href="../../Home.html">Home</a></li>
+			<li class="navlinks"><a href="../group.html">Group</a></li>
+			<li class="navlinks"><a href="../Data/Data.html">Data</a></li>
+			<li class="navlinks"><a href="../HTML/HTML.html">HTML</a></li>
+			<li class="navlinks"><a href="../CSS/CSS.html">CSS</a></li>
+		</ul>
+		<div class="headerimage_container data_header_image">
+			<a href="#section1" class="headerbutton">
+				<p>Kleurmodellen</p>
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<section id="section1" class="text">
+
+			<h1>Kleurmodellen</h1>
+			<br>
+			<p>Deze pagina gaat over het RGB-model en het CMY-model.</p>
+			<br>
+			<p>In een computer wordt niet alleen letters gecodeerd, maar ook kleuren. De twee belangrijkste
+				kleurmodellen zijn het RGB- en het CMY-model. <br>
+				Om kleuren digitaal weer te geven, bijvoorbeeld op een scherm, wordt het RGB-model gebruikt. Het
+				CMY-model wordt gebruikt door printers om digitale bestanden te kunnen afdrukken.</p>
+			<br>
+			<h3>RGB-model</h3>
+			<p>Een beeldscherm heeft allemaal pixels. Als je verder inzoomt op die pixels, zou je rode, groene en blauwe
+				lampjes zien. Iedere pixel in het beeldscherm bestaat uit drie lampjes. <br>
+				Verschillende kleuren kunnen worden weergegeven op het beeldscherm door deze drie lampjes helderder en
+				zwakker te laten branden.</p>
+			<br>
+			<img src="ImagesData/rgbpixelsvoorbeeld.jpg" alt="pixels" title="pixels" width="200" height="188">
+			<br>
+			<br>
+			<p>Een kleurmodel mengt ook kleuren net zoals je verschillende kleuren verf met elkaar mengt, waardoor je
+				dus allemaal verschillende kleurencombinaties kan krijgen. <br>
+				Het RGB-model is gebaseerd op de kleuren rood, groen en blauw. Deze drie kleuren zie je ook terug in de
+				kleuren van de lampjes in de pixels. Ze vormen de basis voor alle andere kleuren.</p>
+			<br>
+			<img src="ImagesData/rgbmodel.png" alt="RGB-model" title="RGB-model" width="200" height="188">
+			<p>Bij het RGB-model zijn de kleuren die met mengen ontstaan anders dan bij het mengen van verf. Hieronder
+				zie je een tabel met kleurencombinaties van het RGB-model.</p>
+			<br>
+			<table border="2">
+				<tr>
+					<td> <b>Kleur 1: rood</b> </td>
+					<td> <b>Kleur 2: groen</b> </td>
+					<td> <b>Kleur 3: blauw</b> </td>
+					<td> <b>Nieuwe kleur</b> </td>
+				</tr>
+				<tr>
+					<td> - </td>
+					<td> - </td>
+					<td> - </td>
+					<td> Zwart </td>
+				</tr>
+				<tr>
+					<td> Rood </td>
+					<td> Groen </td>
+					<td> Blauw </td>
+					<td> Wit </td>
+				</tr>
+				<tr>
+					<td> Rood </td>
+					<td> Groen </td>
+					<td> - </td>
+					<td> Geel </td>
+				</tr>
+				<tr>
+					<td> Rood </td>
+					<td> - </td>
+					<td> Blauw </td>
+					<td> Magenta </td>
+				</tr>
+				<tr>
+					<td> - </td>
+					<td> Groen </td>
+					<td> Blauw </td>
+					<td> Cyaan </td>
+
+				</tr>
+			</table>
+			<br>
+			<br>
+			<p>Het RGB-model is gebaseerd op een zwarte achtergrond. De lampjes van de pixels branden niet als je
+				beeldscherm uitstaat, dus dan is het beeld zwart. <br>Door kleuren aan de zwarte achtergrond toe te
+				voegen, ontstaan nieuwe kleuren. Als je dus alle kleuren gebruikt, ontstaat er wit.</p>
+			<br>
+			<p>Om bijvoorbeeld de kleur magenta te maken, heb je rood en blauw nodig. Zo zou je het bijvoorbeeld kunnen
+				noteren: magenta = (255, 0, 255).</p>
+			<br>
+			<p>De hoeveelheid rood, groen en blauw wordt aangegeven met een decimaal getal van 0 tot 256 (een byte). Dat
+				komt omdat een computer niet met procenten kan werken.</p>
+			<br>
+			<h3>CMY-model</h3>
+			<p>Voor het weergeven van bijvoorbeeld een foto op een beeldscherm wordt dus het RGB-model gebruikt, waarbij
+				kleuren worden toegevoegd aan je zwarte beeldscherm. <br>
+				Bij het uitprinten van b.v. een foto kan het RGB-model niet worden gebruikt, want het papier in de
+				printer is wit en anders gaat het mis door kleuren toe te voegen aan een witte achtergrond.</p>
+			<br>
+			<p>Speciaal hiervoor is er een ander kleurmodel, het Cyan-Magenta-Yellowmodel (CMY-model). De kleuren worden
+				toegevoegd aan een witte achtergrond bij dit model. <br>
+				De drie kleuren die in dit model worden gebruikt zijn cyaan, magenta en geel.</p>
+			<br>
+			<img src="ImagesData/cmymodel.png" alt="CMY-model" title="CMY-model" width="200" height="188">
+			<br>
+			<p>Een mix van pure cyaan, magenta en geel geven geen zwart maar donkergrijs. Als je dit zou afdrukken met
+				een inkt-printer, wordt het papier op de plek waar zwart moet komen erg nat<br>
+				van de inkt en duurt het drogen lang. Daarvoor is een oplossing bedacht, namelijk zwart aan het
+				kleurmodel toevoegen om toch zwart te kunnen maken. <br>
+				Zo ontstaat het CMYK-model. De K staat dan voor ke<b>y</b> of voor blac<b>k</b>.</p>
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</section>
+
+	</main>
+
+	<!-- <script src="scripts/app.js"></script> -->
+</body>
+
+</html>

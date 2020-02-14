@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(lightblue, pink);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    height: 5vh;
+    background: black;
+    display: flex;
+    list-style: none;
+}
+
+.navlinks {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+.navlinks:hover {
+    background: lightblue;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerimage_container {
+    height: 95vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: black 1px solid;
+}
+
+.headerbutton {
+    font-size: 50px;
+    color: white;
+    border: solid black 2px;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.headerbutton:hover {
+    background: lightblue;
+
+}
+
+
+/* main */
+
+#section1 {
+    height: 90vh;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-element {
+    height: 47%;
+    width: 80%;
+    margin: auto;
+    background: black;
+    border: solid black 1px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: black 3px 2px;
+}
+
+.grid-element:hover {
+    background: rgb(8, 121, 193);
+}
+
+.grid-element:hover ~ .expanding-grid {
+    transform: translateY(50%);
+}
+
+.grid-element:first-child:hover{
+    background: rgb(0, 42, 92);
+} 
+
+.grid-element:nth-child(2):hover {
+    background: rgb(229, 83, 0);
+}
+
+.grid_element_image{
+    width: 95%;
+    margin: 2.5%;
+    height: 65%;
+    border: solid black 1px;
+    object-fit: cover;
+}
+
+.list_fix {
+    margin-left: 25px;
+}
+
+/* different background per page */
+.home_header {
+    background: url(../content/images/header\ image\ 4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HTML_header_image {
+    background-image: url(../content/images/HTML\ 5.jpg)
+}
+
+.CSS_header {
+    background-image: url(../content/images/css\ 3.jpg)
+}
+
+.data_header_image {
+    background-image: url(../content/images/data.jpg)
+}
+
+footer {
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

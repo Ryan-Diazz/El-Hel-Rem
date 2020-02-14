@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+    <title>HTML - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="../../scripts/style.css">
+    <link rel="stylesheet" type="text/css" href="scripts/HTML.css">
+    <link rel="stylesheet" href="scripts/HTMLTABEL.css">
+</head>
+
+<body>
+    <header class="HTML_Header">
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../group.html">Group</a></li>
+            <li class="navlinks"><a href="../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../CSS/CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container HTML_header_image">
+            <a href="#section1" class="headerbutton">
+                <p>Tabellen</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1" class="text">
+
+
+            <h1> Tabellen </h1>
+            <br>
+            <p>
+                Op deze pagina ga ik het over <b>tabellen</b> hebben, ik ga uitleggen hoe je met HTML <b>tabellen</b>
+                kan maken.
+
+                <br>
+                De code van een tabel ziet er ingewikkeld uit maar het valt wel mee. Een tabel maken bestaat uit een
+                paar stappen:
+                <br>
+
+                <ol class="isdicht">
+
+                    <li>Je moet beginnen met een table-element, een table-element is niks anders dan <tabel> te
+                            schrijven</li>
+                    <li> Tussen de <> van het table-element zet je border, dit is voor het aangeven van je rand, zet jij
+                            border = 1 dan krijgt jouw tabel een dikte van 1 px, zet je border = 2 krijgt je tabel een
+                            border van 2 px enz. </li>
+                    <li>Vervolgens moet je in dit element een tr-element schrijven</li>
+                    <li>Met td-element kan je beslissen hoeveeel rijen je wilt hebben, schrijf dat tussen het
+                        tr-element, met rijen wordt bedoeld hoeveel cellen je naast elkaar over de horizontale-as wilt
+                        hebben</li>
+                    <li> Wil je ook meerdere rijen over de verticalen-as hebben dan sluit je, je tr-element af en open
+                        je hem weer dan schrijf je weer een td-element en worden er onder weer nieuwe cellen
+                        gecre&euml;erd.
+
+                </ol>
+                Voorbeeld tabel (border = 2 is gebruikt):
+
+                <table border="2">
+                    <tr>
+                        <td> informatie 1 </td>
+                        <td> informatie 2 </td>
+                    </tr>
+                    <tr>
+                        <td> informatie 3 </td>
+                        <td> informatie 4 </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+                <br>
+                Dit is de code voor een hele basic tabel, wil jij een soort titel geven aan je tabel, dus twee cellen
+                van de tabel samenvoegen tot 1 dan gebruik je rowspan en colspan. <br>
+                Als je wilt dat twee cellen die naast elkaar zitten samen worden gevoegd dan gebruik je colspan. Als je
+                dit wilt gebruiken dan zet je dat tussen het td-element colspan = 2, <br>
+                dat wilt zeggen dat jou cel die
+                normaal als 1 cel wordt gemaakt een lengte van 2 cellen heeft, het streepje tussen de twee cellen
+                bijwijze van spreken verdwijnt en wordt tot 1 grootte cel gemaakt.
+                <br>
+                Voorbeeld:
+
+                <table border="2">
+                    <tr>
+                        <td colspan="2"> informatie 1 en informatie 2 </td>
+
+                    </tr>
+                    <tr>
+                        <td> informatie 3 </td>
+                        <td> informatie 4 </td>
+                    </tr>
+                </table>
+
+                <br>
+                <br>
+                Als je niet de cellen naast elkaar, maar onder elkaar tot 1 wilt voegen dan gebruik je de code rowspan =
+                2 dit gebruik je exact het zelfde als de colspan, het enige verschil is, <br>
+                is dat je nu de cellen onder elkaar wilt dus als je bijvoorbeedl, als informatie tabel, in cel 1 en 2
+                informatie hebt staan, en cel 3
+                en 4 dan voeg je nu dus cel 1 en 3 <br>
+                samen tot een dus dat moet duidelijk in de code staan.
+                <br>
+                Voorbeeld:
+                <table border="2">
+                    <tr>
+                        <td rowspan="2">
+                            informatie 1 en informatie 3 </td>
+                        <td> informatie 2 </td>
+                    </tr>
+                    <tr>
+
+                        <td> informatie 4 </td>
+                    </tr>
+                </table>
+
+                <br>
+                Als je, je tabellen mooier wilt maken kan je ook gebruik maken van css, namelijk met border-collapse:
+                collapse;
+
+                <br> Hier is een voorbeeld waar dat is gebruikt:
+
+
+                <table class="collapse" border="2">
+                    <tr>
+                        <td> informatie 1 </td>
+                        <td> informatie 2 </td>
+                    </tr>
+                    <tr>
+                        <td> informatie 3 </td>
+                        <td> informatie 4 </td>
+                    </tr>
+                </table>
+
+
+
+
+            </p>
+
+
+
+
+
+
+
+
+        </section>
+    </main>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Datacompressie - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="../../scripts/style.css">
+</head>
+
+<body>
+    <header class="HTML_Header">
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../group.html">Group</a></li>
+            <li class="navlinks"><a href="../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="../HTML/HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../CSS/CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container data_header_image">
+            <a href="#section1" class="headerbutton">
+                <p>Compressie bij afbeeldingen</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1" class="text">
+
+            <h1>Compressie bij afbeeldingen</h1>
+            <br>
+            <h3>Typen datacompressie</h3>
+            <p>Er zijn verschillende typen datacompressie:</p>
+            <ol class="list_fix">
+                <li>Niet-exact omkeerbaar (<em>lossy</em>, met kwaliteitsverlies)</li>
+                <li>Exact omkeerbaar (<em>lossless</em>, zonder kwaliteitsverlies)</li>
+            </ol>
+            <br>
+            <h3>Lossy compression</h3>
+            <p>De omvang van een bestand wordt kleiner bij lossy compression, omdat de informatie uit het originele
+                bestand wordt aangepast en verwijderd.</p>
+            <br>
+            <p>Stel dat bij een foto een strand uit wel 50 geeltinten bestaat. Sommige verschillen in de kleurtint zijn
+                dan zo klein, dat wij mensen het verschil bijna niet kunnen zien. <br>
+                De ruimte die de afbeelding inneemt verklein je door minder verschillende geeltinten in het strand te
+                laten voorkomen. Als de compressie <br>
+                nog verdergaat, dan kan je wel zien dat de kwaliteit achteruitgaat.</p>
+            <br>
+            <p>JPEG, vaak afgekort tot JPG, is een veelgebruikte lossy compression-methode voor afbeeldingen. Je
+                telefoon past automatisch de lossy compression toe <br>
+                op de gemaakte foto’s, want ze worden opgeslagen als .jpg bestand.</p>
+            <br>
+            <h3>Lossless compression</h3>
+            <p>Bij lossless compression wordt de originele kwaliteit echter niet beïnvloed. Er wordt dan ook geen
+                informatie verwijderd. De inhoud van het bestand wordt <br>
+                dan ook op een andere en efficiëntere manier opgeslagen. Als er in een afbeelding bijvoorbeeld vier
+                pixels naast elkaar dezelfde waarde hebben, bijvoorbeeld 36, <br>
+                wordt dit standaard opgeslagen als (36, 36, 36, 36). Door lossless compression toe te passen wordt dit
+                (4, 36).</p>
+            <br>
+            <p>Bij lossy compression is het onmogelijk om een bestand weer om te zetten naar het origineel, omdat er
+                informatie wordt aangepast of verwijderd.<br>
+                Een bestand dat met een lossless compression is gecomprimeerd, kan dus wel gewoon worden omgezet naar
+                het origineel.</p>
+            <br>
+            <p>Over het algemeen levert lossy compression wel kleinere bestanden op dan wanneer er gebruik wordt gemaakt
+                van lossless compression.</p>
+            <br>
+            <img src="ImagesData/lossyvoorbeeld.jpg" alt="lossy en lossless compression"
+                title="lossy en lossless compression" width="350" height="188">
+            <p><em>Lossy vs. lossless compression</em></p>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        </section>
+
+    </main>
+
+    <!-- <script src="scripts/app.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Elisabeth, Heleen en Remco</title>
+    <link rel="stylesheet" href="../../../../scripts/style.css">
+    <link rel="stylesheet" href="../../scripts/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li class="navlinks"><a href="../../../../Home.html">Home</a></li>
+            <li class="navlinks"><a href="../../../group.html">Group</a></li>
+            <li class="navlinks"><a href="../../../Data/Data.html">Data</a></li>
+            <li class="navlinks"><a href="../../../HTML/HTML.html">HTML</a></li>
+            <li class="navlinks"><a href="../../CSS.html">CSS</a></li>
+        </ul>
+        <div class="headerimage_container CSS_header">
+            <a href="#section1" class="headerbutton">
+                <p>Achtergronden</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text achtergrond_kleur">
+                    <h1>Background</h1>
+                    <p class="p_element">Een website kan je op verschillende manieren een achtergrond geven. <br>
+                        Je kan een afbeelding, vector of kleur als achtergrond doen. die je op <br> verschillende
+                        manieren kan toepassen</p>
+                    <h2><br>CSS achtergrond eigenschappen: <br><br></h2>
+                    </h1>
+                    <ul class="ul-fix">
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-repeat</li>
+                        <li>background-attachment</li>
+                        <li>background-position</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">background-color.</h2>
+                    <p>met de background-color eigenschap kan je een achtergrond kleur geven aan een geselecteerd
+                        HTML
+                        element. dit kan door een kleur-naam te geven zoals "red". <br>
+                        of door een hexadecimaal te geven zoals "#ff0000". <br>
+                        of met een RGB waarde als "rgb(255, 0, 0)", <br>
+                        maar je kan het ook met een RGBA doen zoals "rgba(255, 0, 0, 0.5)", waarbij de laatse
+                        waarde
+                        van
+                        0.0 tot 1 kan gaan voor de doorichtigheid.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="background-color_style" cols="25"
+                        rows="20" placeholder="background-color style">.kleur_naam {
+    background-color: red;
+}
+
+.hexadecimaal {
+    background-color: #ff0000;
+}
+
+.rgb{
+    background-color: rgb(255, 0, 0);
+}
+
+.rgba{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+/* probeer ook andere waardes en klik op run */</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('background-color_style', 'background-color_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="background-color_voorbeeld" src="voorbeeld_color.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="iframe_container">
+                    <h1>Voorbeeld</h1>
+                    <iframe class="iframe_voorbeeld" id="background-image_voorbeeld" src="voorbeeld_image.html"
+                        frameborder="0"></iframe>
+                </div>
+
+                <div class="text background_image">
+                    <h2 class="h2_text_devide">Background-image</h2>
+                    <p>Met de background-image eigenschap kan je een foto als achtergrond doen.
+                        een foto kan je defineren met een url("www.image.nl"), <br>
+                        ook kan je linear-gradiant(kleur1, kleur2) gebruiken, waarin de kleuren met naam, rgb, hex of
+                        rgba waardes
+                        kan worden gedefineerd. <br>
+                        radial-gradient(kleur1, kleur2), waarin net als bij linear-gradient de kleuren als naam, rgb,
+                        hex of rgba waardes gedefineerd kunnen worden. <br>
+                        repeating-linear-gradient(kleur1, kleu2), wat hetzelfde is als linear-gradiant alleen dan
+                        herhalend. <br>
+                        repeating-radial-gradient(kleur1, kleur2), wat hetzelfde is als radial-gradient alleen dan
+                        herhalend. <br> <br>
+
+                        voorbeelden van deze effecten kan je hiernaast zien. <br> <br>
+                    </p>
+                    <h2 class="h2_text_devide">Background-blend-mode</h2>
+                    <p>Je kan background-image en background-color ook effect op elkaar laten uitvoeren met
+                        background-blend-mode.
+                        de waardes zijn: multiply, screen, overlay, darken, lighten, color-dodge, saturation,
+                        color en luminosity. <br>
+                        <br>
+                        Dit kan je bebruiken om de foto aan te passen in css met kleuren die je met background-color
+                        defineerd. Verschillende effecten hebben verschillende waardes bij
+                        background-blend-mode <br>
+                    </p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="background-image" id="background-image_style" class="css_style_text" cols="30"
+                        rows="20">.url {
+    background-image: url(background-image.jpg);
+}                      
+.linear-gradient {
+    background-image: linear-gradient(red, yellow);
+}                      
+.radial-gradient{
+    background-image: radial-gradient(red, yellow);
+}                      
+.repeating-linear-gradient{
+    background-image: repeating-linear-gradient(red, yellow);
+}
+.repeating-radial-gradient {
+    background-image: repeating-radial-gradient(red, yellow);
+}
+.background-blend-mode {
+    background-image: url(background-image.jpg);
+    background-color: green;
+    background-blend-mode: darken;
+}</textarea>
+                </div>
+                <button class="voorbeeld_button"
+                    onclick="styleChanger('background-image_style', 'background-image_voorbeeld')">
+                    <h1>Run</h1>
+                </button>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text background-repeat">
+                    <h2 class="h2_text_devide">Background-repeat</h2>
+                    <p>Een background image herhaalt zichzelf automatisch al, maar je kan de manier waarom de Image zich
+                        herhaalt veranderen of zelfs uitschakelen.<br>
+                        Bij background-repeat heb je de volgende waardes: <br>
+                        <br>
+                    </p>
+                    <ul class="ul-fix">
+                        <li>repeat (standaart), hierbij wordt de background-image zo veel mogelijk herhaalt.</li>
+                        <li>repeat-x, de background-image zo veel mogelijk herhaalt in de horizontale richting</li>
+                        <li>repeat-y, de background-image wordt zo veel mogelijk herhaald in de verticale richting</li>
+                        <li>no-repeat, bij deze waarde wordt de background-image niet herhaalt.</li>
+                        <li>space, hier wordt de background-image zo vaak mogelijk volledig herhaalt en gelijkmatig
+                            verdeeld.</li>
+                        <li>round, maakt het passend en verkleint of vergroot daarvoor de background-image.</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">background-repeat gebruik</h2>
+                    <p>Background-repeat wordt voor verschillende doeleinden gebruikt. als je een vast patroon op je
+                        website wilt dan defineer je vaak niet eens de repeat want dat is als standaart. Maar als je een
+                        afbeelding heb die herhalend is maar afgemaakt moet worden dan gebruik je round. als je de
+                        afbeelding alleen maar in de horizontale of verticale richting wil laten repeaten, dan gebruik
+                        je
+                        repeat-x voor horizontaal of repeat-y voor verticaal.
+                        space gebruik je als je de background-image geleidelijk verdeeld wilt hebben.</p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="background-repeat_style" cols="25"
+                        rows="20" placeholder="background-color style">.repeat {
+    background-repeat: repeat;
+}
+.repeat-x {
+    background-repeat: repeat-x;
+}
+.repeat-y{
+    background-repeat: repeat-y;
+}
+.no-repeat{
+    background-repeat: no-repeat;
+}
+.space {
+    background-repeat: space;
+}
+.round{
+    background-repeat: round;
+}
+/*klik op run */</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('background-repeat_style', 'background-repeat_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="background-repeat_voorbeeld" src="voorbeeld_repeat.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="iframe_container">
+                    <h1>Voorbeeld</h1>
+                    <iframe class="iframe_voorbeeld" id="background-attachment_voorbeeld"
+                        src="background-attachment.html" frameborder="0"></iframe>
+                </div>
+
+                <div class="text background_image">
+                    <h2 class="h2_text_devide">Background-attachment</h2>
+                    <p>Met de background-attachment is een toevoeging op de Background-image eigenschap en bepaalt hoe
+                        de Background-image wordt gebonden aan de pagina. <br>
+                        <br>
+                        hieronder een paar waardes die bij Background-attachment horen: </p>
+
+                    <ul class="ul-fix">
+                        <li>fixed, hier blijft de background-image op dezelfde plek als je scrollt.</li>
+                        <li>scroll (standaart), bij deze waarde scrolled de background-image mee met de pagina.</li>
+                        <li>local, met deze waarde scrolled de background-image alleen mee met de content van het
+                            element.</li>
+                    </ul>
+                    <h2 class="h2_text_devide">gebruik.</h2>
+                    <p>Background-attachment wordt vooral gebruikt om de website mooier te maken met meer effecten. <br>
+                        dit kan op meerdere manieren worden gebruikt en het is echt een css eigenschap om de
+                        creativiteit los te laten. </p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="background-image" id="background-attachment_style" class="css_style_text" cols="30"
+                        rows="20">.fixed {
+    background-attachment: fixed;
+}
+
+.scroll {
+    background-attachment: scroll;
+}
+  
+.local{
+    background-attachment: local;
+}
+</textarea>
+                </div>
+                <button class="voorbeeld_button"
+                    onclick="styleChanger('background-attachment_style', 'background-attachment_voorbeeld')">
+                    <h1>Run</h1>
+                </button>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="width_limit_90">
+                <div class="text achtergrond_kleur">
+                    <h2 class="h2_text_devide">Background-position</h2>
+                    <p class="p_element">Een background-position eigenschap is een toevoeging op het background-image.
+                        Je kan ermee defineren waar de achtergrond-image begint of staat. <br>
+                        <br>
+                        Je hebt bij background-position de volgende waardes:
+                    </p>
+                    <br>
+                    <ul class="ul-fix">
+                        <li>left/right top/center/bottom, hiermee defineer je met woorden waar de background-image
+                            begint.</li>
+                        <li>x% y%, van 0% tot 100% kan je defineren waar de background-image begint. als er 1 waarde is
+                            gegeven is de andere automatisch 50%.</li>
+                        <li>x y, de waardes kan in alle verschillende CSS waarde systemen gegeven worden, als er 1
+                            waarde is gedefineerd dan is de ander automatisch 50%, % en andere waarde systemen kunnen
+                            gemengd worden.</li>
+                    </ul>
+
+                    <h2 class="h2_text_devide">Gebruik</h2>
+                    <p>Als je een grote banner afbeelding heb, maar die is groter dan de plek die je er voor heb
+                        aangewezen dna kan het zijn dat de background-image niet past en dat je hem moet verplaatsen en
+                        dat kan met background-position. </p>
+
+                    <h2 class="h2_text_devide">CSS code:</h2>
+
+                    <textarea name="Achtergrond kleur" class="css_style_text" id="background-position_style" cols="25"
+                        rows="20" placeholder="background-position style">.woorden {
+    background-position: center bottom;
+}
+
+.percentage {
+    background-position: 25% 75%;
+}
+
+.andere_soorten_waardes{
+    background-position: -5vw -5vh;
+}
+/* probeer ook andere waardes en klik op run */</textarea>
+                    <button class="voorbeeld_button"
+                        onclick="styleChanger('background-position_style', 'background-position_voorbeeld')">
+                        <h1>Run</h1>
+                    </button>
+                </div>
+
+                <div class="iframe_container">
+                    <h1>Voorbeeld:</h1>
+                    <iframe class="iframe_voorbeeld" id="background-position_voorbeeld" src="background-position.html"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>
